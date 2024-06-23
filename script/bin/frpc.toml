@@ -1,0 +1,18 @@
+serverAddr = "127.0.0.1"
+serverPort = 8712
+auth.token = "if786549wfddas5265"
+transport.tcpMux = true
+
+[[proxies]]                      
+name = "grafana"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3000
+remotePort = 3000
+
+[[proxies]]                      
+name = "vm"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8428
+remotePort = 8428
